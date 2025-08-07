@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <style>
+        body
+        {
+            height: 100svh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            
+        }
+        .timer
+        {
+            display: flex;
+        }
+        .minutes,.seconds
+        {
+            width:100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 20px;
+            font-family: 'Orbitron';
+            box-shadow: inset 5px 5px 10px rgb(136, 134, 134);
+        }
+        .sep
+        {
+            width: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .circle
+        {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        button
+        {
+            padding: 8px 40px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+
+        }
+        .info
+        {
+            font-weight: bold;
+        }
+        input
+        {
+            width:90px;
+            margin-left: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="info">
+         Enter minutes:<input type="number" id="inp" required>
+    </div> -->
+    <h1>TIMER</h1>
+    <div class="timer">
+        <div class="minutes">00</div>
+        <div class="sep">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="seconds">00</div>
+    </div>
+    <div class="but">
+        <button onclick="Start()">Start</button>
+        <button onclick="Stop()">Stop</button>
+    </div>
+    <script src="timer.js"></script>
+</body>
+</html>

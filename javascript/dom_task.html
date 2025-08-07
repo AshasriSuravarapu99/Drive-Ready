@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100svh;
+            width: 100%;
+            flex-direction: column;
+        }
+        .child
+        {
+            width: 200px;
+            height:200px;
+            background-color: red;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+        <div class="child">
+            <button onclick="move_top()">top</button>
+            <button onclick="move_bottom()">bottom</button>
+            <button onclick="move_left()">left</button>
+            <button onclick="move_right()">right</button>
+        </div>
+        <script>
+            function move_top()
+            {
+                document.getElementsByClassName('child')[0].style="position:relative;top:-100px";
+            }
+            function move_bottom()
+            {
+                document.getElementsByClassName('child')[0].style="position:relative;top:100px";
+            }
+            function move_left()
+            {
+                document.getElementsByClassName('child')[0].style="position:relative;left:-100px";
+            }function move_right()
+            {
+                document.getElementsByClassName('child')[0].style="position:relative;left:100px";
+            }
+        </script>
+</body>
+</html>

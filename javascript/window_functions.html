@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child
+        {
+            width: 100%;
+            height: 150svh;
+        }
+    </style>
+    <script>
+         window.onfocus=function()
+         {
+            console.log("window focused..");
+         }
+        //  window.onblur=function()
+        //  {
+        //     console.log("window blured..");
+        //  }
+         window.onscroll=function()
+         {
+            console.log("window scrolled..");
+         }
+         window.onresize=function()
+         {
+            console.log("window resized..");
+         }
+         window.onload=function()
+         {
+            alert("loaded successful");
+         }
+
+         function fun()
+         {
+            alert("you went out of winow");
+         }
+    </script>
+</head>
+<body onblur="fun()">
+    <div class="child"></div>
+</body>
+</html>

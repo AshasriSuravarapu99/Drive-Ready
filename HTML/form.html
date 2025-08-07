@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            max-width: 300px;
+            align-items: flex-start;
+        }  */
+        
+  .form-group {
+     display: flex;
+    align-items: center; 
+    margin-bottom: 10px;
+  }
+  .form-group label {
+    width: 130px; /* fixed label width for alignment */
+  }
+  .form-group input {
+    flex: 0;
+  }
+</style>
+
+
+  
+   
+</head>
+<body>
+  
+    
+<div class="form-group">
+  <label for="name">Username:</label>
+  <input type="text" id="name">
+</div>
+<div class="form-group">
+  <label for="email">Password:</label>
+  <input type="email" id="email">
+</div>
+<div class="form-group">
+   <label for="">City of Employment:</label>
+    <input type="text"> 
+</div>
+<div class="form-group">
+   <label>Web server:</label>
+    <select>
+        <option>-Choose a server-</option>
+    </select> 
+</div>
+<div class="form-group">
+    <label>Please Specify your role:</label> 
+    <input type="radio" name="role" >Admin
+    <input type="radio" name="role">Engineer  
+    <input type="radio" name="role">Manager  
+    <input type="radio" name="role">Guest 
+</div>
+<div class="form-group">
+    <label>Single Sign-on to the following</label> <br>
+    <input type="checkbox">Mail  <br>
+    <input type="checkbox">Payroll  <br>
+    <input type="checkbox">Self-service  <br>
+</div>
+<div class="form-group" style="margin-left: 100px;">
+    <input type="submit"> 
+    <input type="Reset"  style="margin-left: 10px;"> 
+</div>  
+</body>
+</html>

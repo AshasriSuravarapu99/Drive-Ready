@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Menu.css">
+    
+</head>
+<body>
+    <div onclick="Open()" class="Open">&#9776;</div>
+    <div class="mobile-options">
+        <span onclick="Close()">&times;</span>
+        <div>Home</div>
+        <div>About</div>
+        <div>Contact</div>
+        <div>Pricing</div>
+    </div>
+    
+   <script>
+        function Close()
+        {
+            document.getElementsByClassName("mobile-options")[0].style = "left:-200px;";
+            // console.log("Hello");
+        }
+        function Open()
+        {
+            document.getElementsByClassName("mobile-options")[0].style = "left:0px;";
+            // console.log("Hello");
+        }
+    </script>
+</body>
+</html>

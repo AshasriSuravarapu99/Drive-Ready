@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var first;
+        var last;
+        function change(event,ans)
+        {
+           console.log(event.target.value);
+           if(ans=='first') first = event.target.value;
+           else last = event.target.value;
+        }
+        function fun(event)
+        {
+            event.preventDefault();
+            console.log(first);
+            console.log(last);
+        }
+    </script>
+    <form onsubmit="fun(event)">
+        First_Name:<input type="text" onchange="change(event,'first')"><br>
+        Last_Name:<input type="text" onchange="change(event,'last')">
+        <button type="submit" >submit</button>
+    </form>
+</body>
+</html>

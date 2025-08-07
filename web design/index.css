@@ -1,0 +1,360 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.first .navbar
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+    align-items: center;
+    background-color: rgb(64, 8, 95);
+    justify-content: space-between;
+    color: white;
+    
+}
+.navbar p
+{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: rgb(210, 203, 203);
+    font-size: 18px;
+}
+
+.first .matter
+{
+    width: 100%;
+    height: 679px;
+    /* background-color:  rgb(52, 0, 92); */
+    background-color: rgb(64, 8, 95);
+    /* background-color:aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first .matter1
+{
+    width: 1200px;
+    height: 500px;
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+@media(max-width:800px)
+{
+    .first .matter1
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+    }
+}
+.first .matter .matter1  .info
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 50px; */
+    padding: 20px;
+    /* background-color: yellow; */
+}
+.first .matter .matter1  .info #h1
+{
+    font-size: 50px;
+    font-weight: bold;
+}
+.first .matter .matter1 .info button
+{
+    color: white;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: 40px;
+    background-color: rgb(45, 175, 226);
+    padding: 10px 50px;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    width: 200px;
+}
+.second
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.features
+{
+    width: 100%;
+    height: 400px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.features .feature1
+{
+    width: 350px;
+    height: 350px;
+    /* background-color: yellow; */
+}
+.features .feature2
+{
+    width: 350px;
+    height: 350px;
+    /* background-color: antiquewhite; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap: 10px;
+    margin-left: 10px;
+}
+.box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+.box i
+{
+    font-size: 30px;
+}
+
+.third
+{
+    width: 100%;
+    height: 750px;
+    margin-top: 30px;
+    background-color: rgb(64, 8, 95);
+    padding: 100px;
+    padding-left: 200px;
+    padding-right: 100px;
+    color: white;
+    font-size: 30px;
+}
+.third .data
+{
+    width: 100%;
+    height: 500px;
+    background-color: aqua;
+}
+.content
+{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+.content .image img
+{
+    width: 60%;
+    height: 550px;
+    float: left;
+}
+.content .data
+{
+    float: left;
+    height: 550px;
+    width: 40%;
+    background-color: rgb(64, 8, 95);
+    padding: 30px;
+    
+
+}
+#heading
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+#para
+{
+    font-size: 15px;
+    margin:30px ;
+}
+#more
+{
+    font-size: 17px;
+    border-bottom: 1px solid white;
+    display: inline;
+    margin:30px;
+
+}
+.four
+{
+    width: 100%;
+    height: 500px;
+    /* background-color: whitesmoke; */
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+.four .matter
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    color: white;
+    padding: 25%;
+    padding-top: 100px;
+    gap: 20px;
+}
+.four .matter h1
+{
+    color: skyblue;
+    font-size: 50px;
+}
+.four .matter p
+{
+    color: black;
+    font-size: 20px;
+}
+.four .matter button
+{
+    width: 200px;
+    color: white;
+    font-weight: bold;
+    background-color:rgb(45, 175, 226);
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+}
+.four .image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.four .image img
+{
+    width: 80%;
+    height: 80%;
+}
+.five
+{
+    width: 100%;
+    height: 1100px;
+    background-color: rgb(64, 8, 95);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    padding-left: 200px;
+}
+.five .image img
+{
+    width: 1000px;
+    height: 800px;
+    position: absolute;
+    top: 100px;
+    
+}
+.boxes
+{
+    width: 500px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    position: absolute;
+    top: 580px;
+    right: 180px;
+
+}
+.boxes .box
+{
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   flex-direction: column;
+   color: rgb(80, 80, 80);
+   font-size: 18px;
+}
+.boxes .box img
+{
+    width: 70px;
+}
+#line
+{
+    position: absolute;
+    width: 500px;
+    height: 1000px;
+    right: 200px;
+    top: 50px;
+}
+
+@media(max-width:780px)
+{
+    .first .matter1
+    {
+       grid-template-columns: 1fr 1fr;
+
+    } 
+    .third
+    {
+        /* height: 1000px; */
+        padding-left: 50px;
+        padding-right: ;
+        /* padding-top: 50px; */
+    }
+    .four
+    {
+        padding: 0px;
+        margin: 0px;
+    }
+    .four .matter
+    {
+        padding: 0px;
+        padding-top:100px;
+        padding-left: 30px;
+    }
+    .four .matter h1
+    {
+        font-size: 40px;
+    }
+    .five
+    {
+        padding-left: 0px;
+        height: 650px;
+        padding: 100px;
+    }
+    #man
+    {
+        width: 400px;
+        height: 400px;
+    }
+    #line
+    {
+        height: 650px;
+        top: 0px;
+        left: 200px;
+        width: 350px;
+    }
+    .boxes
+    {
+        width: 200px;
+        height: 200px;
+    }
+    .boxes .box
+    {
+        padding: 20px;
+    }
+    .boxes .box img
+    {
+        width: 50px;
+    }
+
+}

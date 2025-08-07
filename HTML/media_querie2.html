@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav
+        {
+            width: 100%;
+            height: 70px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            
+        }
+
+        ul
+        {
+            display: flex;
+            /* justify-content: center; */
+            /* color: rgb(189, 180, 180); */
+            color: green;
+            list-style: none;
+            gap: 20px;
+            margin-left: 50px;
+            font-weight: bold;
+            cursor: pointer;
+
+           
+        }
+        li:hover
+        {
+            
+            text-decoration-line: underline;
+            /* text-decoration-color: rgb(27, 181, 27); */
+            text-decoration-color: black;
+            text-decoration-thickness: 2px;
+        }
+        img
+        {
+            width: 180px;
+            height: 50px;
+        }
+        i
+        {
+            color: black;          
+        }
+        .bar
+        {
+            display: none;
+            position: absolute;
+            left: 50px;
+        }
+        @media(max-width:750px)
+        {
+            .bar
+            {
+                display: block;
+            }
+            ul
+            {
+                display: none;
+            }
+    
+        }
+        .options
+        {
+            position: absolute;
+            right: 100px;
+            cursor: pointer;
+            
+        }
+        .opt
+        {
+            color: black;
+            /* background-color: black; */
+            position: absolute;
+            top: 20px;
+            /* bottom: -115px; */
+            /* padding: 8px; */
+            display: none;
+            border:1px solid black;
+        }
+        .opt p
+        {
+            padding: 5px;
+            font-weight: bold;
+        }
+        .options:hover .opt
+        {
+            display: block;
+            cursor: pointer;
+        }
+        .opt p:hover{
+            background-color: rgb(180, 168, 168);
+            color: black;
+        }
+        .nav button{
+            position: absolute;
+            right: 70px;
+            padding: 15px 25px;
+            border-radius: 5px;
+            background-color: green;
+            color:white;
+            font-weight: bold;
+            outline: none;
+            border: none;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(226, 220, 220);">
+    <div class="nav">
+        <img src="./../HTML/maya website/Images/Thub_logo.png">
+        <ul>
+            <li>MyMaya</li>
+            <li>Owl Code</li>
+            <li>AptLogic</li>
+            <li>Contact</li>
+        </ul>
+        <button class="login">Login</button>
+        <!--  -->
+         <div class="options">
+                <p class="bar"><i class="fa-solid fa-bars"></i></p>
+                <div class="opt">
+                    <p>MyMaya</p>
+                    <p>OwlCode</p>
+                    <p>AptLogic</p>
+                    <p>Contact</p>
+                </div>
+         </div>
+    </div>
+</body>
+</html>

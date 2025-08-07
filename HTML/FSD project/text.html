@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            /* background-color: black; */
+            display: flex;
+            justify-content: center;
+            margin-top: 200px;
+        }
+        span
+        {
+            color: red;
+            padding: 5px;
+            font-weight: bold;
+            font-size: 50px;
+             /* text-shadow: 5px 5px 5px rgb(52, 45, 45);  */
+        }
+        .h
+        {
+            position: relative;
+            animation: show 5s linear infinite;
+            /* animation: a1 2s linear infinite; */
+
+
+        }
+        .e
+        {
+            animation: a2 2s ease infinite;
+            position: relative;
+            animation: show 5s ease infinite;
+
+        }
+        .l1
+        {
+            animation: a2 2s ease-in infinite;
+            position: relative;
+            animation: show 5s ease-in infinite;
+
+        }
+        .l
+        {
+            animation: a2 2s ease-out infinite;
+            position: relative;
+            animation: show 5s ease-in-out infinite;
+
+        }
+        .o
+        {
+            animation: a2 2s ease-in-out infinite;
+            position: relative;
+            animation: show 5s ease-out infinite;
+
+        }
+        @keyframes show
+        {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+            }
+            100%
+            {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        @keyframes a1
+        {
+              0%
+              {
+                   bottom: 0px;
+              }
+              50%
+              {
+                  bottom: 20px;
+              }
+              90%
+              {
+                bottom: 10px;
+              }
+              95%
+              {
+                bottom: 5px;
+              }
+              100%
+              {
+                bottom: 0px;
+              }
+        }
+         @keyframes a2
+        {
+              0%
+              {
+                   bottom: 0px;
+              }
+              50%
+              {
+                  bottom: 20px;
+              }
+              90%
+              {
+                bottom: 10px;
+              }
+              95%
+              {
+                bottom: 5px;
+              }
+              100%
+              {
+                bottom: 0px;
+              }
+        } @keyframes a3
+        {
+             0%
+              {
+                   bottom: 0px;
+              }
+              50%
+              {
+                  bottom: 20px;
+              }
+              90%
+              {
+                bottom: 10px;
+              }
+              95%
+              {
+                bottom: 5px;
+              }
+              100%
+              {
+                bottom: 0px;
+              }
+        } @keyframes a4
+        {
+              0%
+              {
+                   bottom: 0px;
+              }
+              50%
+              {
+                  bottom: 20px;
+              }
+              90%
+              {
+                bottom: 10px;
+              }
+              95%
+              {
+                bottom: 5px;
+              }
+              100%
+              {
+                bottom: 0px;
+              }
+        } @keyframes a5
+        {
+              0%
+              {
+                   bottom: 0px;
+              }
+              50%
+              {
+                  bottom: 20px;
+              }
+              90%
+              {
+                bottom: 10px;
+              }
+              95%
+              {
+                bottom: 5px;
+              }
+              100%
+              {
+                bottom: 0px;
+              }
+        }
+    </style>
+</head>
+<body>
+    <span class="h">N</span>
+    <span class="e">E</span>
+    <span class="l1">T</span>
+    <span class="l">F</span>
+    <span class="o">L</span>
+    <span class="e">I</span>
+    <span class="h">X</span>
+
+    
+
+</body>
+</html>

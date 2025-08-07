@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>para 1</p>
+    <p class="para">para 2</p>
+    <div class="divs">div-1</div>
+    <span id="demo">span-1</span>
+    <script>
+        console.log(document.getElementsByTagName('p'));
+        console.log(document.getElementsByClassName('divs'));
+        console.log(document.getElementById('demo'));
+        console.log(document.querySelector('p'));
+        console.log(document.querySelectorAll('p'));
+        console.log(document.querySelector('#demo'));
+        console.log(document.getElementById('demo').innerText);
+        document.getElementById('demo').innerText = "span changed";
+        document.getElementById('demo').style="color:red;font-size:20px";
+    </script>
+</body>
+</html>

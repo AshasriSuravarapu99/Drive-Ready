@@ -1,0 +1,28 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: black;
+}
+.parent
+{
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child
+{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50px;
+}
+

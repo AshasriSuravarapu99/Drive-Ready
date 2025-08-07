@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <style>
+        *
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body
+{
+    background-color: black;
+    overflow-x: hidden;
+}
+.nav
+{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(31, 29, 29);
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    border-bottom: 1px solid rgba(85, 81, 81, 0.3);
+    position: sticky;
+    top:0px;
+    z-index: 999;
+}
+.nav .opt a
+{
+    font-family: 'Inter';
+    font-weight: bold;
+    color: rgb(174, 169, 169);
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+}
+.nav .opt a::after
+{
+    content: "";
+    background: linear-gradient(45deg,#6a0dad,#0059ff);
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    bottom: -5px;
+    left: 0px;
+    transition: width 0.2s linear;
+}
+.nav .opt a:hover::after
+{
+    width: 100%;
+}
+.nav .opt
+{
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    right: 200px;
+}
+.nav .brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 5%;
+}
+.nav .brand h2
+{
+    background: linear-gradient(to right,#6a0dad,#0059ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 20px;
+}
+.nav .brand .logo 
+{
+    padding: 15px;
+    background: linear-gradient(45deg,#6a0dad,#0059ff);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius:8px;
+    font-size:10px;
+}
+.nav .pro-hover
+{
+    position: absolute;
+     /* right: -70px; */
+     right: 5%;
+}
+.nav .pro-hover .profile
+{
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+}
+.nav .pro-hover .profile:hover
+{
+    background-color: rgb(27, 27, 220);
+    padding: 8px;
+    border-radius:10px;
+}
+.side-bar
+{
+    width: 150px;
+    height: auto;
+    background-color: rgb(31, 29, 29);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    top: 30px;
+    right: -4%;
+    border-radius:10px;
+    visibility: hidden;
+}
+.side-bar a
+{
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 20px;
+    color: rgb(231, 220, 220);  
+    font-family: 'Inter';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    width: 100%;
+}
+.side-bar a:hover
+{
+    background-color: rgb(63, 62, 62);
+    color: rgb(18, 104, 210);
+}
+.pro-hover:hover .side-bar
+{
+   visibility: visible;
+}
+.close-but
+{
+    color: white;
+    font-size: 20px;
+    padding-right: 30px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+@media(min-width:0px) and (max-width:426px)
+{
+    .opt
+    {
+        display: none;
+        visibility: hidden;
+    }
+}
+@media(min-width:426px) and (max-width:1600px)
+{
+    .hide
+    {
+        display: none;
+    }
+}
+
+    </style>
+</head>
+<body>
+     <div class="nav">
+        <div class="brand">
+            <div class="logo">
+                <i class="fa-solid fa-chevron-left"></i>&nbsp;
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <h2>Campus Creations</h2>
+        </div>
+        <div class="opt">
+            <a href="home.html" style="color: #6a0dad;">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">PROJECTS</a>
+        </div>
+        <div class="pro-hover">
+            <span class="profile" onclick="Open()"><i class="fa-regular fa-circle-user"></i></span>
+            <div class="side-bar">
+                <!-- <span class="close-but" onclick="Close()">&times;</span> -->
+                <a href="" class="hide">Home</a>
+                <a href="" class="hide">About</a>
+                <a href="" class="hide">Projects</a>
+                <a href="">Profile</a>
+                <a>Student Login</a>
+                <a>Admin Login</a>
+                <a>Business Login</a>
+                <a href="">Log out</a>
+             </div>
+        </div>
+    </div>
+</body>
+</html>

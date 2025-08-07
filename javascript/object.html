@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = {
+            1:2,
+            start:"end",
+            name:function()
+            {
+                console.log("Function..");
+            }
+
+        };
+        console.log(a);
+        a[3]="Hello";
+        console.log(a);
+        a.hii="Vishu";
+        console.log(a);
+
+        a["name"]();
+        a.name();
+
+
+        delete a[3];
+        console.log(a);
+
+        console.log(Object.keys(a));
+        console.log(Object.values(a));
+        console.log(Object.entries(a));
+
+        Object.entries(a).map(ele=>{
+            console.log(ele);
+        });
+
+        Object.entries(a).map(ele=>
+        {
+            console.log("Keys:",ele[0],"Values:",ele[1]);
+        }
+        );
+
+         
+    </script>
+</body>
+</html>

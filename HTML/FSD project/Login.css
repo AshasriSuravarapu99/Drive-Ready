@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main
+{
+    width: 100%;
+    height: 729px;
+    background:linear-gradient(to bottom ,  purple, plum);
+}
+.header
+{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(167, 58, 167);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.icon
+{
+    font-size: 40px;
+    /* color: rgba(36, 16, 36, 0.589); */
+} 
+.options
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 20px;
+    
+} 
+.login
+{
+    font-size:30px;
+
+}
+.home
+{
+    position: relative;
+}
+.about{
+    position: relative;
+}
+.products{
+    position: relative;
+}
+.retail{
+    position: relative;
+}
+.home_op
+{
+    position: absolute;
+    background-color:purple;
+    width: 80px;
+    color:black;
+    top: 25px;
+    float: left;
+    display: none;
+}
+.op
+{
+    display: flex;
+    /* justify-content: center; */
+    padding: 5px;
+}
+.op:hover
+{
+    background-color: black;
+    color: white;
+}
+.about_op
+{
+    position: absolute;
+    background-color:purple;
+    width: 80px;
+    color:black;
+    /* left: 300px; */
+    top: 25px;
+    float: left;
+    display: none;
+
+}
+.products_op
+{
+    position: absolute;
+    background-color:purple;
+    width: 80px;
+    color:black;
+    left: 15px; 
+    top: 25px;
+    float: left;
+    display: none;
+
+}
+.retail_op
+{
+    position: absolute;
+    background-color: purple;
+    width: 80px;
+    color:black;
+    /* left: 500px; */
+    top: 25px;
+    float: left;
+    display: none;
+
+}
+.profile_op
+{
+    position: absolute;
+    background-color: purple;
+    width: 100px;
+    color:black;
+    right:-8px;
+    top: 35px;
+    float: left;
+    display: none;
+
+}
+.profile
+{
+    position: relative;
+}
+.home:hover .home_op
+{
+    display: block;
+}
+.about:hover .about_op
+{
+    display: block;
+}
+.products:hover .products_op
+{
+    display: block;
+}
+.retail:hover .retail_op
+{
+    display: block;
+}
+.profile:hover .profile_op
+{
+    display: block;
+}

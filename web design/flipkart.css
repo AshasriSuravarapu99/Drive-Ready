@@ -1,0 +1,386 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+/* navbar */
+.navbar
+{
+    width: 100%;
+    height:60px;
+    display: flex;
+    /* padding:10%; */
+    background-color: white;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.navbar .bars
+{
+    display: none;
+}
+.navbar img
+{
+   height: 40px;
+}
+.navbar .mobile
+{
+    display: none;
+}
+.search
+{
+    height: 40px;
+    width: 830px;
+    display: flex;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+.search .icon
+{
+    width: 5%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input
+{
+    width: 95%;
+    border: none;
+    background-color: aliceblue;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.login
+{
+    display: flex;
+    /* background-color: yellow; */
+    gap: 10px;
+}
+.login .icon
+{
+    font-size: 20px;
+}
+.login select
+{
+    border: none;
+    font-weight: bold;
+}
+.cart
+{
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+}
+.store
+{
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+}
+
+@media(min-width:0px) and (max-width:769px)
+{
+    .navbar .bars
+    {
+        display: block;
+    }
+    .navbar .search
+    {
+        display: none;
+    }
+    .navbar .cart p
+    {
+        display: none;
+    }
+    .navbar .dots
+    {
+        display: none;
+    }
+    .navbar .store
+    {
+        display: none;
+    }
+    .navbar .mobile
+    {
+        display: block;
+    }
+}
+@media(min-width:768px) and (max-width:1024px)
+{
+    .navbar .cart .icon
+    {
+        font-size: 20px;
+    }
+    .navbar .store 
+    {
+        display: block;
+        font-size: 20px;
+    }
+    .navbar .store p
+    {
+        display: none;
+    }
+    .navbar .mobile
+    {
+        display: none;
+    }
+    .navbar .bars
+    {
+        display: none;
+        
+    }
+    .navbar .dots
+    {
+        display: block;
+        font-size: 20px;
+    }
+    .navbar .search
+    {
+        width:300px;
+        display: block;
+        display: flex;
+        align-items: center;
+        padding-left:5px;
+    }
+    .navbar .login .icon
+    {
+        font-size: 20px;
+    }
+    .navbar input::placeholder
+    {
+        font-size: 15px;
+    }
+}
+@media(min-width:1024px) and (max-width:1400px)
+{
+    .navbar .cart p
+    {
+       display: none;
+    }
+    .navbar .search
+    {
+        width: 500px;
+    }
+}
+
+/* section */
+.section
+{
+    width: 100%;
+    height: 669px;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 10px;
+}
+.section1
+{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.section1 .heading
+{
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    height: 10%;
+    padding: 10px;
+    position: relative;
+}
+.section .heading .side
+{
+    position: absolute;
+    right: 10px;
+    font-size: 21px;
+    color: rgb(34, 34, 238);
+}
+.matter
+{
+    width: 100%;
+    height: 90%;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    
+}
+.box
+{
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* padding: 10px; */
+    border: 1px solid lightgray;
+
+}
+.section .section1 .matter .box img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.info p
+{
+    font-weight: bold;
+    color: green;
+}
+
+.section3
+{
+    background-color: rgb(248, 224, 211);
+    background-image: url('flipkart_images/img4.jpg');
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.section3 .info
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    left: 40px;
+}
+.section3 .info h1
+{
+    color: darkslategray;
+    padding-bottom: 10px;
+}
+.section3 .info p
+{
+    color: gray;
+    padding-bottom: 30px;
+}
+.section button
+{
+    font-weight: bold;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: darkslategray;
+    border: none;
+    outline: none;
+    width: 150px;
+}
+@media(min-width:0px) and (max-width:321px)
+{
+    .section .section1 .matter .box .info h4
+     {
+        font-size: 12px;
+     }
+}
+@media(min-width:0px) and (max-width:426px)
+{
+    .section
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 1500px;
+    }
+    .box
+    {
+        /* padding: 10px; */
+    }
+    .section .section1 .matter .box img
+    {
+        width: 120px;
+        height: 130px;
+    }
+    .section3 .info
+    {
+        top:20px;
+        left: 10px;
+    }
+    .section .heading
+     {
+        font-size: 10px;
+     }
+     .section .heading .side
+     {
+        font-size: 15px;
+     }
+     
+}
+@media(min-width:322px) and (max-width:376px)
+{
+    .section .section1 .matter .box img
+    {
+        width: 150px;
+        height: 140px;
+    }
+     .section .heading
+     {
+        font-size: 13px;
+     }
+     .section .heading .side
+     {
+        font-size: 20px;
+     }
+    
+}
+@media(min-width:378px) and (max-width:426px)
+{
+    .section .section1 .matter .box img
+    {
+        width: 160px;
+        height: 140px;
+    }
+    .section .heading
+     {
+        font-size: 13px;
+     }
+     .section .heading .side
+     {
+        font-size: 20px;
+     }
+    
+}
+@media(min-width:426px) and (max-width:1025px)
+{
+    .section
+    {
+        height: 900px;
+    }
+    .section .section1 .matter .box img
+    {
+        width: 150px;
+        height: 150px;
+    }
+     .section
+     {
+        grid-template-rows: 1fr 1fr 3fr;
+        grid-template-columns: 1fr;
+     }
+     .matter
+     {
+        /* grid-template-columns: 1fr; */
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
+     .section3 .info
+     {
+        top: 30px;
+        left: 100px;
+     }
+     .section .heading
+     {
+        height: 15%;
+     }
+
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent
+        {
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            
+        }
+        .child
+        {
+            width:100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        @media(max-width:665px)
+        {
+            .parent
+            {
+                height: 210px;
+                /* padding: 10px; */
+            }
+        }
+        .example
+        {
+            width: 100%;
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+
+    </div>
+    <div class="example"></div>
+</body>
+</html>

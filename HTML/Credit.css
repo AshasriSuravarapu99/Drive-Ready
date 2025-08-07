@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.atm
+{
+    width: 500px;
+    height: 300px;
+    background-color:black;
+    border-radius: 10px;
+    padding: 15px;
+}
+.line
+{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.2;
+    position: absolute;
+    z-index: 1;
+    top:200px;
+
+}
+.first
+{
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+.first p
+{
+    color: white;
+    font-size: 35px;
+    font-weight: 300;
+    
+}
+.matter1
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+
+}
+.matter
+{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+   
+
+}
+.cir1
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position:relative;
+    left: -20px;
+    bottom: -50px;
+    opacity: 0.6;
+    
+}
+.cir2
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgb(224, 203, 9);
+    
+}
+.second
+{
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.second img
+{
+    border-radius: 6px;
+
+}
+.circles p
+{
+    font-weight: 500;
+    position: relative;
+    right: 20px;
+    font-size: 15px;
+}

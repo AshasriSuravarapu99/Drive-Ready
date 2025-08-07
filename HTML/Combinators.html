@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .parent  h1 /*it selects all the elements*/
+         {
+            color: red;
+         }
+          .parent > h1  /* Only allows the direct child and dont apply to children of children*/
+         {
+            color: blue;
+         }
+         
+         /* + selects the right handed siblings */
+         div +p
+         {
+            color:green;
+         }
+         
+    </style>
+</head>
+<body>
+    <h1>Top Outder h1</h1>
+    <div class="parent">
+        <h1>First</h1>
+        <h1>Second</h1>
+        <div>
+            <h1>Inner Child</h1>
+        </div>
+        <p>Third</p>
+        <p> four</p>
+    </div>
+    <h1>Bottom Outer h1</h1>
+</body>
+</html>

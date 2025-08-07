@@ -1,0 +1,192 @@
+ *
+{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body
+{
+    overflow: hidden;
+}
+.sky
+{
+    width: 100%;
+    height: 725px;
+    /* background: linear-gradient(rgb(0, 195, 255),white 70%); */
+    animation: Change 5s infinite ;
+   
+}
+
+            .path
+            {
+                width: 100%;
+                height: 150px;
+                background-color: black;
+                position:absolute;
+                bottom: 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 1;
+            }
+            .path .cross
+            {
+                width: 150px;
+                height: 10px;
+                background-color: white;
+            }
+            .car
+            {
+                position: absolute;
+                width: 300px;
+                top: 480px;
+                right: -0px;
+                animation: moveCar 5s linear infinite;
+                z-index: 2;
+            }
+            .sun
+            {
+                background-color: rgb(255, 187, 0);
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                position: absolute;
+                right: 100px;
+                top: 30px;
+                box-shadow: 0px 0px 10px 5px rgb(255, 162, 0);
+                 z-index: 1;
+                animation: light 5s linear infinite;
+            }
+.tree
+{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 300px;
+}
+.stars .star
+{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px white;
+    position: absolute;
+    /* display: none; */
+    animation-name: look;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+.stars .star1
+{
+    top: 50px;
+    left:200px;
+}
+.stars .star2
+{
+    top: 250px;
+    left:300px;
+}.stars .star3
+{
+    top: 100px;
+    left:500px;
+}.stars .star4
+{
+    top: 150px;
+    left:700px;
+}.stars .star5
+{
+    top: 50px;
+    left:800px;
+}.stars .star6
+{
+    top: 200px;
+    left:1000px;
+}.stars .star7
+{
+    top: 150px;
+    left:1200px;
+}
+.bird
+{
+    width: 200px;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    z-index: 1;
+    animation:fly 5s linear infinite ;
+}
+@keyframes moveCar
+{
+    0%
+    {
+        right: -0px;
+    }
+    100%
+    {
+        right: 100%;
+    }
+    
+}
+@keyframes Change
+{
+    0%
+    {
+
+        background: linear-gradient(to bottom,rgb(0, 195, 255),white 70%);
+        
+    }
+    50%
+    {
+        
+        background: linear-gradient(to bottom ,rgb(255, 81, 0,0.5),rgba(255, 196, 0, 0.138));
+        
+    }
+    100%
+    {
+        background: linear-gradient(to bottom,black,white);
+    }
+}
+@keyframes light
+{
+    50%
+    {
+        top: -100px;
+    }
+    100%
+    {
+        background-color: white;
+        box-shadow: 0px 0px 15px 8px rgb(240, 236, 236);
+    }
+}
+@keyframes look
+{
+    0%
+    {
+       opacity: 0;
+       visibility: hidden;
+    }
+    50%
+    {
+        opacity: 0;
+       visibility: hidden;
+    }
+    100%
+    { 
+       opacity: 1;
+       visibility: visible;
+    }
+}
+@keyframes fly{
+    0%
+    {
+        left: 0px;
+    }
+    100%
+    {
+        left: 100%;
+    }
+}

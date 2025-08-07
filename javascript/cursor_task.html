@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cursor_task.css">
+</head>
+<body>
+     <div class="parent" onmousemove="Move(event)">
+        <div class="child"></div>
+    </div> 
+    <script>
+        function Move()
+        {
+            document.getElementsByClassName("parent")[0].style="border-color:violet";
+            // console.log("Moved");
+        }
+    </script>
+</body>
+</html>

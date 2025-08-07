@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            /* width: 100%; */
+            /* height: 100vh; */
+            justify-content: center;
+            display: flex;
+        }
+        .sun
+        {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            border-radius:50%;
+            z-index: 0;
+        }
+        .circle
+        {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border: 1px solid black;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .circle1
+        {
+            width: 250px;
+            height: 150px;  
+            position: relative;
+            /* padding: 30px; */
+        }
+         .circle2
+        {
+            width: 350px;
+            height: 250px;  
+        }
+         .circle3
+        {
+            width: 450px;
+            height: 350px; 
+        }
+          .circle4
+        {
+            width: 550px;
+            height: 450px; 
+        } 
+         .circle5
+        {
+            width: 650px; 
+            height: 550px; 
+        } 
+          .circle6
+        {
+            width: 750px; 
+            height: 650px; 
+            border: 1px solid black;
+        }  .circle7
+        {
+            width: 850px; 
+            height: 750px; 
+            border: 1px solid black;
+
+        }  .circle8
+        {
+            width: 950px; 
+            height: 850px; 
+           
+
+            /* border: 1px solid black; */
+        }
+        .mer
+        {
+            position: absolute;
+            top: -20px;
+            width: 50px;
+            height: 50px;
+        }
+        .nep
+        {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            left: 550px;
+            z-index: 1;
+
+            
+        }
+         .uranus
+        {
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            left: 370px;
+            top: 200px;
+            z-index: 1;
+        }
+         .jup
+        {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            left: 500px;
+            
+        }
+         .earth
+        {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            
+        }
+         .sat
+        {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 380px;
+            top: 500px;
+            z-index: 1;
+            
+        }
+         .mars
+        {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            
+        }
+         .venus
+        {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            
+        }
+        /* .circular
+        {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            animation: circle 2s linear infinite;
+        }
+        @keyframes circle
+        {
+            0%{
+                transform: rotateZ(0deg) translateX(200px);
+            }
+            100%{
+                transform: rotateZ(360deg) translateX(200px);
+            }
+        } */
+    </style>
+</head>
+<body>
+    <!-- <div class="circular"></div> -->
+     <div class="circle circle8">
+            <!-- <img src="Planets/neptune.png" class="nep"> -->
+            <div class="circle circle7">
+                <!-- <img src="Planets/uranus.png" class="uranus"> -->
+                <div class="circle circle6">
+                        <div class="circle circle5">
+                            <div class="circle  circle4">
+                                <div class="circle circle3">
+                                    <div class="circle circle2">
+                                        <div class="circle circle1">
+                                            <img src="Planets/mercury.png" class="mer">
+                                            <!-- <div class="sun"></div>  -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+     </div>
+     
+     <img src="Planets/neptune.png" class="nep">
+     <img src="Planets/jupiter.png" class="jup">
+     <img src="Planets/uranus.png" class="uranus"> 
+     <img src="Planets/mars.png" class="mars">
+     <img src="Planets/saturn.png" class="sat">
+     <img src="Planets/venus.png" class="venus">
+     <img src="Planets/earth.png" class="earth">
+</body>
+</html>

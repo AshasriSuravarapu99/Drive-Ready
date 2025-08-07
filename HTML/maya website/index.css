@@ -1,0 +1,297 @@
+*
+{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar
+{
+    width: 100%;
+    height: 100;
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+.navbar img
+{
+    width: 200px;
+    height: 100;
+    margin-left: 20px;
+}
+.navbar a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+.navbar a:hover
+{
+    color: green;
+}
+.navbar button
+{
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 15px;
+    transition-property:background-color;
+    transition-duration: 1s;
+
+}
+.navbar button:hover
+{
+    background-color: rgb(59, 187, 59);
+}
+.navbar .links
+{
+    width:500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section1
+{
+    height: 200px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+    padding: 10px;
+}
+.section1-1
+{
+    background-color: green;
+    border-radius: 30px;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    height: 100%;
+
+}
+.section1-1 p
+{
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+}
+.section1-1 img
+{
+    height: 150px;
+    position: absolute;
+    right:50px;
+    top: 30px;
+
+}
+
+.section1-2
+{
+    /* background-color: orange; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+.content
+{
+    background-color: white;
+    width: 90%;
+    border-radius: 15px;
+    justify-self: center;
+    height: 90%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 2px 2px 2px rgb(150, 144, 144);
+
+}
+.content:hover
+{
+    box-shadow: 0px 8px 1px -5px green;
+   
+}
+.content p
+{
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* font-weight: 0; */
+}
+.icon_matter
+{
+    /* background-color: yellow; */
+    /* padding: 10px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    color: green;
+    margin-right: 30px;
+}
+.icon_matter img
+{
+    height: 35px;
+}
+
+.section2{
+    width: 100%;
+    height: 650px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    /* background-color: aliceblue; */
+    padding: 30px;
+    background-color: whitesmoke;
+
+}
+.section2-1
+{
+    /* background-color: violet; */
+    width: 95%;
+    justify-self: center;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: green;
+    border: 1px solid green;
+    background-color: rgb(227, 236, 244,0.2);
+
+}
+.section2-1:hover
+{
+    box-shadow: 0px 8px 1px -5px green;
+   
+}
+.matter{
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px;
+}
+
+.info
+{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    justify-self: center;
+    align-self:center;
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 2px 2px 2px rgb(150, 144, 144);
+}
+.info:hover
+{
+    box-shadow: 0px 8px 1px -5px green;
+   
+}
+.info p
+{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+.info .icon_matter
+{
+     margin-top: 10px;
+}
+.info .icon_matter img
+{
+    /* height: 50px; */
+}
+.info .icon_matter span
+{
+    font-weight: 500;
+}
+.matter2
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* background-color: red; */
+    height: 20%;
+    font-size: 14px;
+    margin: 10px;
+    
+}
+
+.section3
+{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.section3 img
+{
+    width: 300px;
+    height: 100px;
+}
+.section3-1 h1
+{
+   position: relative;
+   top: -40px;
+}
+i{
+    padding: 10px;
+}
+.linkedin
+{
+    color: blue;
+}
+.youtube
+{
+    color: red;
+}
+.facebook
+{
+    color: rgb(60, 60, 227);
+}
+.instagram
+{
+    color: rgb(190, 13, 190);
+    font-size: 18px;
+}
+i:hover{
+    color: green;
+}
+.section4
+{
+    color: rgb(170, 164, 164);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    
+}
+
+
+
+
+
+
+

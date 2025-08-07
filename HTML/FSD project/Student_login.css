@@ -1,0 +1,156 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header
+{
+    width: 100%;
+    height: 50px;
+    background-color:#b392ac;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    justify-content: end;
+}
+.header h1
+{
+    font-family: 'Alumni Sans SC';
+    position: absolute;
+    left: 20px;
+}
+.profile
+{
+    position: relative;
+    cursor: pointer;
+    
+}
+.profile:hover .profile_op
+{
+    display: block;
+}
+.profile a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+.profile_op
+{
+    position: absolute;
+    background-color: #b392ac;
+    width: 150px;
+    color:black;
+    right:-8px;
+    top: 35px;
+    float: left;
+    display: none;
+
+}
+.login
+{
+    font-size: 30px;
+}
+.op
+{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.op:hover 
+{
+    background-color: black;
+}
+.op:hover a
+{
+    color: #b392ac;
+}
+
+
+
+/* Main Section */
+.main
+{
+    width: 100%;
+    height: 679px;
+    /* background-color:#d1b3c4; */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box
+{
+    width: 400px;
+    height: 300px;
+    background-color:#b392ac;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 30px;
+    
+}
+table label
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+input
+{
+    width: 200px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #d1b3c4;
+}
+input::placeholder
+{
+    color: rgb(78, 76, 76,0.5);
+    font-size: 12px;
+}
+.but
+{
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: #d1b3c4;
+    color: rgb(50, 49, 49);
+    outline: none;
+    border-color: #ff8fab;
+    border: none;
+    outline: black;
+    font-weight: bold;
+}
+input[type="submit"]
+{
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #d1b3c4;
+    color: rgb(50, 49, 49);
+    outline: none;
+    border-color: #ff8fab;
+    border: none;
+    outline: black;
+    font-weight: bold;
+    width: 80px;
+    margin:10px;
+    margin-left: 100px;
+    cursor: pointer;
+    
+}
+.forgot
+{
+    text-decoration: none;
+    position: relative;
+    left: 90px;
+    color: black;
+}
+.but a
+{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,192 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* position: relative; */
+}
+.navbar
+{
+    width: 100%;
+    height: 152px;
+    /* background-color: #FFFFFF; */
+    background-color: whitesmoke;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 30px 96px;
+    position: sticky;
+}
+.navbar img
+{
+    width: 156px;
+    height: 76px;
+}
+.navbar .menu
+{
+    width: 604px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* background-color: red; */
+    justify-content: center;
+}
+.navbar .menu .Home
+{
+    /* height: 68px; */
+    border-radius: 5px;
+    background-color: #FFB400;
+    display: flex;
+    padding: 10px 14px;
+    /* gap: 10px; */
+}
+.navbar .menu .skills, .services, .home
+{
+   font-family: 'Inter';
+   font-weight: 500;
+   font-size: 14px;
+   color: #000000;
+   line-height: 100%;
+   letter-spacing: 0%;
+}
+
+.hero
+{
+    width: 100%;
+    height: 630px;
+    /* background-color: green; */
+    /* position: relative; */
+}
+.hero-content
+{
+    width: 721.69px;
+    height: 405.17px;
+    position: absolute;
+    top: 277px;
+    left: 98.27px;
+    /* background-color: red; */
+}
+.hero .hero-content .content
+{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 124%;
+    letter-spacing: 0%;
+    width: 721.69px;
+    height: 160px;
+}
+.hero .hero-content .content1
+{
+    font: 'Inter';
+    font-weight: 400;
+    size: 16px;
+    color: #767676;
+    line-height: 24px;
+    letter-spacing: 0%;
+    width: 600.84px;
+    height: 118.72px;
+    position: absolute;
+    /* top: 460.93px; */
+    /* left: 98.27px; */
+}
+.button-hire
+{
+    width: 218.23px;
+    height: 68.8px;
+}
+.button-hire button
+{
+    width: 154px;
+    height: 51px;
+    background-color: #FFB400;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    top: 330.37px;
+}
+.hero .image
+{
+    width: 808.01px;
+    height: 550.41px;
+    position: absolute;
+    left: 631.68px;
+    top: 231.59px;
+    /* background-color: orange; */
+}
+.pol1
+{
+    width: 22.83px;
+    height: 21.58px;
+    position: relative;
+    top: 590px;
+    left: 1314.64px;
+    /* top: 400px; */
+    z-index: 1;
+    /* border: 2px solid #FF2E00; */
+}
+.rec2
+{
+    width: 22.6px;
+    height: 21.83px;
+    position: absolute;
+    top: 601.23px;
+    left: 533.74px;
+    /* top: 400px; */
+    z-index: 1;
+    transform: rotate(-24.8);
+    /* border: 2px solid #FF2E00; */
+}
+.rec1
+{
+    width: 22.6px;
+    height: 21.83px;
+    position: absolute;
+    top: 245.97px;
+    left: 1278.16px;
+    /* top: 400px; */
+    z-index: 1;
+    transform: rotate(-24.8);
+    /* border: 2px solid #FF2E00; */
+}
+.el15
+{
+    width: 22.833112716674805;
+    height: 21.584583282470703;
+    position: absolute;
+    top: 192.47px;
+    left: 57.39px;
+    z-index: 1;
+
+}
+.el13
+{
+    width: 22.833112716674805;
+    height: 21.584583282470703;
+    top: 664.58px;
+    left: 796.42px;
+    position: absolute;
+    z-index: 1;
+}
+.el16
+{
+    width: 22.833112716674805;
+    height: 21.584583282470703;
+    position: absolute;
+    top: 721.29px;
+    left: 125.89px;
+   z-index: 1;
+
+}
+.el12
+{
+    width: 22.833112716674805;
+    height: 21.584583282470703;
+    position: absolute;
+    top: 222.15px;
+    left: 742.39px;
+    z-index: 1;
+}

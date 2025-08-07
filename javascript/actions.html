@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun()
+        {
+            console.log("Hii");
+        }
+        function fun2(event)
+        {
+            console.log(event.target.value);
+        }
+        function invalid()
+        {
+            console.log("invalid input");
+        }
+        function submit(event)
+        {
+            event.preventDefaultBehaviour();
+            console.log('responding');
+        }
+        function focuss()
+        {
+            console.log("focussed");
+        }
+
+    </script>
+    <button onclick="fun()">click</button>
+    <button ondblclick="fun()">double click</button>
+    <button onmouseenter="fun()">mouse in</button>
+    <button onmouseleave="fun()">mouse leave</button>
+    <button onmouseup="fun()">mouse up</button>
+    <button onmousedown="fun()">mouse down</button>
+    <button onmouseover="fun()">mouse over</button>
+    <button onmouseout="fun()">mouse out</button>  
+    <button onkeydown="fun()">Key down</button>   
+    <button onkeyup="fun()">Keyup</button>  
+    <input type="text" onclick="fun2(event)"> 
+
+    <!-- it is different from mouseleave because it treats parent and child as different -->
+
+    <form>
+        <input type="text" required oninvalid="invalid()" onfocus="focuss()">
+        <input type="number" min="100">
+        <input type="submit">
+        <button type="submit" onsubmit="submit(event)">sub</button>
+
+    </form>
+
+</body>
+</html>
